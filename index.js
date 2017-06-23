@@ -24,9 +24,6 @@ function isArray (v) {
 }
 
 function hasExtension (v, ending) {
-  if (v.indexOf('?') !== -1) { // Remove anything after `?`
-    v = v.substr(0, v.indexOf('?'));
-  }
   var lastIndex = v.lastIndexOf(ending);
   return lastIndex !== -1 && lastIndex === v.length - ending.length;
 }
